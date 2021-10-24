@@ -1,0 +1,249 @@
+.sidebar_154_2 { 
+	width:169px;
+    height:527px;
+    position:absolute;
+    background-color:rgba(55.00000052154064, 189.00000393390656, 189.00000393390656, 0.6000000238418579);
+    left:0px;
+    top:141px;
+}
+.bg_menu_1_3 { 
+	background-color:rgba(55.00000052154064, 189.00000393390656, 189.00000393390656, 0.6000000238418579);
+	width:169px;
+	height:527px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.user_1_10 { 
+	width:105px;
+	height:48px;
+	position:absolute;
+	left:16px;
+	top:8px;
+}
+.selamat_datang_1_11 { 
+	color:rgba(0, 0, 0, 1);
+	width:105px;
+	height:18px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.user_1_12 { 
+	color:rgba(0, 0, 0, 1);
+	width:42px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:25px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.menu_1_26 { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:95px;
+}
+.kolom_menu_1_27 { 
+	background-color:rgba(145.56249797344208, 144.3494814634323, 144.3494814634323, 1);
+	width:169px;
+	height:35.250003814697266px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.menu_1_28 { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.beranda_1_14 { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:129px;
+}
+.kolom_beranda_1_15 { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.beranda_1_16 { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.pinjaman_1_17 { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:165px;
+}
+.kolom_pinjaman_1_18 { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.pinjaman_1_19 { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.simpanan_1_20 { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:201px;
+}
+.kolom_sipmanan_1_21 { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:35.250003814697266px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.simpanan_1_22 { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+.profil_1_23 { 
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:236px;
+}
+.kolom_profil_1_24 { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:169px;
+	height:35.250003814697266px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.profil_1_25 { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:15px;
+	letter-spacing:0;
+}
+._kpri_wiyata_usaha_2021_1_13 { 
+	color:rgba(0, 0, 0, 1);
+	width:169px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:498px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:12px;
+	letter-spacing:0;
+}
+.active {
+    background-color:rgba(0, 54, 99, 0.664);
+}
+.menu {
+    background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width:169px;
+    height:36px;
+}
+.menu span {
+    line-height: 34px;
+    transition: 0.2s;
+}
+.menu:hover > span {
+    background-color:rgb(25, 79, 124);
+    cursor: pointer;
+}
+.menu:hover span .sub-menu {
+    display: block;
+}
+
+.dropdown {
+    display: inline-block;
+    z-index: 999;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    
+}
+
+.dropdown-content span {
+    width:169px;
+    height:36px;
+    color:rgba(0, 0, 0, 1);
+    background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    display: block;
+    position: relative;
+    left: 169px;
+    font-family:Roboto;
+    text-align:center;
+    font-size:15px;
+    letter-spacing:0;
+    transition: 0.2s;
+}
+
+.dropdown-content span:hover {
+    background-color: rgb(25, 79, 124);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}

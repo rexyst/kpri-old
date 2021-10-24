@@ -1,0 +1,22 @@
+#tabel-member th:first-child {
+    border-top-left-radius: 83px;
+}
+#tabel-member tr:last-child td:last-child {
+    border-bottom-right-radius: 83px;
+}
+#tabel-member th, #tabel-member td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#tabel-member th {
+    background-color:#2E9BBD;
+}
+#tabel-member tr:nth-child(even){
+    background-color: #C8E9F0;
+}
+#tabel-member tr:nth-child(odd){
+    background-color: #6CF4F4;
+}
+#tabel-member {
+    width: 100%;
+}

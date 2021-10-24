@@ -1,0 +1,531 @@
+.kolom_profil_1_112 { 
+	width:711px;
+	height:399px;
+	position:absolute;
+}
+.foto_profil_1_113 { 
+	border-radius:50%;
+	background-color:rgba(255, 255, 255, 1);
+	width:150px;
+	height:150px;
+	position: relative;
+  overflow: hidden;
+	left:0px;
+	top:0px;
+}
+
+.foto_profil_1_113 img {
+	display: inline;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+#kpri-ubah-foto-profil {
+	display: none;
+	position: absolute;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+#kpri-ubah-foto-profil:hover {
+	cursor: pointer;
+}
+.kolom_nama_1_114 { 
+	width:176px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:172px;
+}
+.nama_1_115 { 
+	color:rgba(0, 0, 0, 1);
+	width:54px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_116 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:171px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_nip_1_117 { 
+	width:176px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:205px;
+}
+.nip_1_118 { 
+	color:rgba(0, 0, 0, 1);
+	width:33px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_119 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:171px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_jenis_kelamin_158_5 { 
+	width:176px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:238px;
+}
+.jenis_kelamin_158_6 { 
+	color:rgba(0, 0, 0, 1);
+	width:125px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__158_7 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:171px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_tempat_lahir_1_120 { 
+	width:176px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:271px;
+}
+.tempat_lahir_1_121 { 
+	color:rgba(0, 0, 0, 1);
+	width:118px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_122 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:171px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_tanggal_lahir_1_123 { 
+	width:176px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:304px;
+}
+.tanggal_lahir_1_124 { 
+	color:rgba(0, 0, 0, 1);
+	width:121px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_125 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:171px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_alamat_rumah_1_126 { 
+	width:176px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:337px;
+}
+.alamat_rumah_1_127 { 
+	color:rgba(0, 0, 0, 1);
+	width:132px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_128 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:171px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_kode_pos_158_8 { 
+	width:176px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:370px;
+}
+.kode_pos_158_9 { 
+	color:rgba(0, 0, 0, 1);
+	width:85px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__158_10 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:171px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_no_hp_1_132 { 
+	width:180px;
+	height:23px;
+	position:absolute;
+	left:531px;
+	top:172px;
+}
+.nomor_hp_1_133 { 
+	color:rgba(0, 0, 0, 1);
+	width:92px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_134 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_instansi_158_11 { 
+	width:180px;
+	height:26px;
+	position:absolute;
+	left:531px;
+	top:205px;
+}
+.__158_12 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.instansi_158_13 { 
+	color:rgba(0, 0, 0, 1);
+	width:71px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:3px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_alamat_instansi_1_129 { 
+	width:180px;
+	height:26px;
+	position:absolute;
+	left:531px;
+	top:241px;
+}
+.__1_130 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.alamat_instansi_1_131 { 
+	color:rgba(0, 0, 0, 1);
+	width:140px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:3px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_ktp_suami_1_135 { 
+	width:180px;
+	height:23px;
+	position:absolute;
+	left:531px;
+	top:277px;
+}
+.foto_ktp_suami_1_136 { 
+	color:rgba(0, 0, 0, 1);
+	width:144px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_137 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_ktp_istri_1_138 { 
+	width:180px;
+	height:23px;
+	position:absolute;
+	left:531px;
+	top:310px;
+}
+.foto_ktp_istri_1_139 { 
+	color:rgba(0, 0, 0, 1);
+	width:121px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_140 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_foto_3x4_1_141 { 
+	width:180px;
+	height:23px;
+	position:absolute;
+	left:531px;
+	top:343px;
+}
+.foto_3x4_1_142 { 
+	color:rgba(0, 0, 0, 1);
+	width:78px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_143 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_tanggal_registrasi_158_14 { 
+	width:180px;
+	height:23px;
+	position:absolute;
+	left:531px;
+	top:376px;
+}
+.tanggal_registrasi_158_15 { 
+	color:rgba(0, 0, 0, 1);
+	width:165px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__158_16 { 
+	color:rgba(0, 0, 0, 1);
+	width:310px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.tombol_update_profil_1_144 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:206px;
+	top:92px;
+    border-radius: 10px;
+}
+.tombol_selanjitnya_1_145 { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.tombol_selanjitnya_1_145:hover {
+	cursor: pointer;
+}
+.update_profil_1_146 { 
+	color:rgba(0, 0, 0, 1);
+	width:102.38461303710938px;
+	height:17.875px;
+	position:absolute;
+	left:9px;
+	/* top:8.125px; */
+	top: 5px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:11px;
+	letter-spacing:0;
+}

@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: absolute;
+    width: 1360px;
+    height: 666px;
+    max-width: 1360px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: lightpink;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.kpri-input {
+    background-color: rgba(255, 255, 255, 1);
+    width: 301px;
+    height: 38.68599319458008px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    font-family: Roboto;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+:focus-visible {
+    outline: none;
+}
+.kpri-input-file{
+    width: 294px !important;
+    height: fit-content !important;
+    box-shadow: none !important;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-radius: 0;
+}
+input[type="file" i] {
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+    line-height: 42px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(0, 75, 136, 0.836);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.kpri-submit {
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 0);
+	width:100%;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+.kpri-submit :hover {
+  cursor: pointer;
+}
+
+.kpri-show {
+  display: block;
+}
+
+.kpri-hide {
+  display: none;
+}
+
+.kolom_header { 
+	width:484px;
+	height:101px;
+	position:absolute;
+	left:0px;
+	top:2px;
+}
+
+.koperasi_indonesia_logo_4a2e56cea6_seeklogo_2_1_230 { 
+	width:100px;
+	height:101px;
+	position:absolute;
+	left:30px;
+	top:12px;
+	background-image:url(../../i/logo-koperasi.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+.koperasi_pegawai_republik_indonesia_1_231 { 
+	color:rgba(0, 0, 0, 1);
+	width:315px;
+	height:18px;
+	position:absolute;
+	left:150px;
+	top:12px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:15px;
+	letter-spacing:0;
+}
+.wiyata_usaha_1_232 { 
+	color:rgba(0, 0, 0, 1);
+	width:363px;
+	height:54px;
+	position:absolute;
+	left:150px;
+	top:26px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:50px;
+	letter-spacing:0;
+}
+.jl__krakatau_no_216__kencong__kabupaten_jember__jawa_timur_68167_telepon___0336__321386_1_233 { 
+	color:rgba(0, 0, 0, 1);
+	width:364px;
+	height:32px;
+	position:absolute;
+	left:150px;
+	top:81px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:10px;
+	letter-spacing:0;
+}
+.rectangle_7_1_234 { 
+	background-color:rgba(21.568752229213715, 178.49999696016312, 178.49999696016312, 1);
+	width:1360px;
+	height:15px;
+	position:absolute;
+	left:0px;
+	top:124px;
+}
+.uppercased {
+  text-transform:uppercase;
+}
+.kpri-main-container {
+  margin-left: 197px;
+  margin-top: 170px;
+  width: 1080px;
+  height: 416px;
+  background: #e5e5e5;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.halaman_utama_1_250 { 
+	background-color:rgba(200.10416328907013, 232.92125433683395, 240.12499898672104, 1);
+	width:1360px;
+	height:666px;
+	position:absolute;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#aksi img {
+  width:25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.kpri-main-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.kpri-profile-show-icon {
+  width:25px;
+  margin-left: 10px;
+  position:absolute;
+}

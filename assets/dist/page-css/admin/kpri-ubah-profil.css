@@ -1,0 +1,775 @@
+.kolom_ubah_profil_1_180 { 
+	width:1020px;
+	height:428px;
+	position:absolute;
+}
+.ellipse_1_1_181 { 
+	border-radius:500px;
+	background-color:rgba(255, 255, 255, 1);
+	width:150px;
+	height:150px;
+	position:absolute;
+	left:2px;
+	top:0px;
+}
+.kolom_nama_167_20 { 
+	width:815px;
+	height:30px;
+	position:absolute;
+	left:204px;
+	top:-19px;
+}
+.nama_167_21 { 
+	color:rgba(0, 0, 0, 1);
+	width:54px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:5px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__167_22 { 
+	color:rgba(0, 0, 0, 1);
+	width:640px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:5px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_nama_177_2 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:291px;
+	height:30px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_nip_165_20 { 
+	width:815px;
+	height:30px;
+	position:absolute;
+	left:204px;
+	top:23px;
+}
+.nip_165_21 { 
+	color:rgba(0, 0, 0, 1);
+	width:33px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:3px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__165_22 { 
+	color:rgba(0, 0, 0, 1);
+	width:640px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:3px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_nip_177_9 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:291px;
+	height:30px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_jenis_kelamin_165_23 { 
+	width:815px;
+	height:23px;
+	position:absolute;
+	left:204px;
+	top:67px;
+}
+.jenis_kelamin_165_24 { 
+	color:rgba(0, 0, 0, 1);
+	width:125px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__laki_laki_165_25 { 
+	color:rgba(0, 0, 0, 1);
+	width:640px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.perempuan_178_2 { 
+	color:rgba(0, 0, 0, 1);
+	width:102px;
+	height:23px;
+	position:absolute;
+	left:357px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_tempat_lahir_165_26 { 
+	width:815px;
+	height:30px;
+	position:absolute;
+	left:204px;
+	top:91px;
+}
+.tempat_lahir_165_27 { 
+	color:rgba(0, 0, 0, 1);
+	width:118px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:3px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__165_28 { 
+	color:rgba(0, 0, 0, 1);
+	width:640px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:3px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_tempat_lahir_177_10 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:291px;
+	height:30px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_tanggal_lahir_165_29 { 
+	width:815px;
+	height:30px;
+	position:absolute;
+	left:204px;
+	top:133px;
+}
+.tanggal_lahir_165_30 { 
+	color:rgba(0, 0, 0, 1);
+	width:121px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:3px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__165_31 { 
+	color:rgba(0, 0, 0, 1);
+	width:640px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:3px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_tanggal_lahir_177_11 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:291px;
+	height:30px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.__165_31 { 
+	color:rgba(0, 0, 0, 1);
+	width:640px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:0px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_alamat_rumah_1_194 { 
+	width:495px;
+	height:83px;
+	position:absolute;
+	left:2px;
+	top:172px;
+}
+.alamat_rumah_1_195 { 
+	color:rgba(0, 0, 0, 1);
+	width:132px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_196 { 
+	color:rgba(0, 0, 0, 1);
+	width:5px;
+	height:23px;
+	position:absolute;
+	left:171px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_alamat_rumah_1_221 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:83px;
+	position:absolute;
+	left:194px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_kode_pos_165_16 { 
+	width:497px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:265px;
+}
+.kode_pos_165_17 { 
+	color:rgba(0, 0, 0, 1);
+	width:85px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:2px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__165_18 { 
+	color:rgba(0, 0, 0, 1);
+	width:5px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:2px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_kode_pos_165_19 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_nomor_hp_171_34 { 
+	width:497px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:311px;
+}
+.nomor_hp_171_35 { 
+	color:rgba(0, 0, 0, 1);
+	width:94px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__171_37 { 
+	color:rgba(0, 0, 0, 1);
+	width:5px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_nomor_hp_171_38 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_nama_instansi_171_48 { 
+	width:497px;
+	height:36px;
+	position:absolute;
+	left:0px;
+	top:357px;
+}
+.nama_instansi_171_49 { 
+	color:rgba(0, 0, 0, 1);
+	width:129px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__171_51 { 
+	color:rgba(0, 0, 0, 1);
+	width:5px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_foto_ktp_suami_171_52 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_nama_isntansi_171_53 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_alamat_kantor_1_197 { 
+	width:497px;
+	height:83px;
+	position:absolute;
+	left:523px;
+	top:172px;
+}
+.__1_198 { 
+	color:rgba(0, 0, 0, 1);
+	width:5px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:1px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.alamat_instansi_1_199 { 
+	color:rgba(0, 0, 0, 1);
+	width:140px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:4px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_alamat_kantor_1_213 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:83px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_ktp_suami_1_203 { 
+	width:497px;
+	height:36px;
+	position:absolute;
+	left:523px;
+	top:265px;
+}
+.foto_ktp_suami_1_204 { 
+	color:rgba(0, 0, 0, 1);
+	width:144px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.foto_ktp_suami_171_32 { 
+	color:rgba(0, 0, 0, 1);
+	width:144px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_205 { 
+	color:rgba(0, 0, 0, 1);
+	width:5px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_foto_ktp_suami_1_215 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_foto_ktp_suami_171_33 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_ktp_istri_1_206 { 
+	width:497px;
+	height:36px;
+	position:absolute;
+	left:523px;
+	top:311px;
+}
+.foto_ktp_istri_1_207 { 
+	color:rgba(0, 0, 0, 1);
+	width:121px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_208 { 
+	color:rgba(0, 0, 0, 1);
+	width:5px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_foto_ktp_istri_1_216 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kolom_foto_3x4_1_209 { 
+	width:497px;
+	height:36px;
+	position:absolute;
+	left:523px;
+	top:357px;
+}
+.foto_ukuran_3x4_1_210 { 
+	color:rgba(0, 0, 0, 1);
+	width:145px;
+	height:23px;
+	position:absolute;
+	left:0px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.__1_211 { 
+	color:rgba(0, 0, 0, 1);
+	width:5px;
+	height:23px;
+	position:absolute;
+	left:175px;
+	top:6px;
+	font-family:Roboto;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+	line-height:px;
+}
+.kolom_foto_3x4_1_217 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:301px;
+	height:36px;
+	position:absolute;
+	left:196px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.tombol_ubah_pasword_165_6 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:547px;
+	top:402px;
+    border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.tombol_selanjitnya_165_7 { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.ubah_kata_sandi_165_8 { 
+	color:rgba(0, 0, 0, 1);
+	width:102.38461303710938px;
+	height:17.875px;
+	position:absolute;
+	left:9px;
+	top:8px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:11px;
+	letter-spacing:0;
+}
+.tombol_selanjutnya_1_222 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:749px;
+	top:402px;
+    border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.tombol_selanjitnya_1_223 { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.simpan_1_224 { 
+	color:rgba(0, 0, 0, 1);
+	width:102.38461303710938px;
+	height:17.875px;
+	position:absolute;
+	left:9px;
+	top:8.125px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:11px;
+	letter-spacing:0;
+}
+.tombol_kembali_1_225 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:899px;
+	top:402px;
+    border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.tombol_selanjitnya_1_226 { 
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	width:121px;
+	height:26px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.kembali_1_227 { 
+	color:rgba(0, 0, 0, 1);
+	width:102.38461303710938px;
+	height:17.875px;
+	position:absolute;
+	left:9px;
+	top:8.125px;
+	font-family:Roboto;
+	text-align:center;
+	font-size:11px;
+	letter-spacing:0;
+}
+#laki-laki {
+	margin-left:196px;
+}
