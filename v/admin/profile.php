@@ -3,6 +3,7 @@
 session_start();
 include('atoms/kpri.atom.head.html'); 
 ?>
+<link type="text/css" rel="stylesheet" href="../../assets/dist/page-css/admin/kpri-admin-special.css">
 </head>
 <body>
 

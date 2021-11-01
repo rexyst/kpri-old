@@ -8,7 +8,9 @@ if(isset($_GET['nip'])){
         if(mysqli_num_rows($query)>0) { 
             while ($data = mysqli_fetch_array($query)) {
                 ?>
+                <form action="../../m/kpri.model.profile-updater.php?a=3&nip=<?php echo $_GET['nip'];?>" method="post">
                 <div class="ellipse_1_1_181"></div>
+                
                 <div class=kolom_nama_167_20><span  class="nama_167_21">Nama</span><span  class="__167_22">:</span>
                 <div class="kolom_nama_177_2">
                 <input class="kpri-input uppercased" id="nama" name="nama" maxlength="50" type="text" required>
@@ -70,33 +72,86 @@ if(isset($_GET['nip'])){
                 <textarea class="kpri-input uppercased" name="alamat-instansi" id="alamat-instansi" cols="40" rows="5" maxlength="200" required><?php echo $data['alamat_instansi']; ?></textarea>
                 </div>
                 </div>
-                <div class=kolom_ktp_suami_1_203><span  class="foto_ktp_suami_1_204">Foto KTP Suami</span><span  class="foto_ktp_suami_171_32">Foto KTP Suami</span><span  class="__1_205">:</span>
-                <div class="kolom_foto_ktp_suami_171_33">
-                <input class="kpri-input" type="file" name="foto-ktp-suami" id="foto-ktp-suami" required>
+                <div class=tombol_simpan_184_24>
+                <div class="tombol_simpan_184_25">
+                <input type="submit" name="submit" value="SIMPAN" class="tombol_simpan_184_25">
                 </div>
                 </div>
-                <div class=kolom_ktp_istri_1_206><span  class="foto_ktp_istri_1_207">Foto KTP Istri</span><span  class="__1_208">:</span>
-                <div class="kolom_foto_ktp_istri_1_216">
-                <input class="kpri-input" type="file" name="foto-ktp-istri" id="foto-ktp-istri" required>
+                <div class=tombol_kembali_184_27>
+                <div class="tombol_simpan_184_28">
+                <button class="tombol_simpan_184_28" type="button" onclick="window.open('../../c/kpri.c.php?action=profile&nip=<?php echo $_GET['nip'];?>', '_SELF')">KEMBALI</button>
                 </div>
                 </div>
-                <div class=kolom_foto_3x4_1_209><span  class="foto_ukuran_3x4_1_210">Foto Ukuran 3x4</span><span  class="__1_211">:</span>
-                <div class="kolom_foto_3x4_1_217">
-                <input class="kpri-input" type="file" name="foto-3x4" id="foto-3x4" required>
+                </form>
+                <form id="update-level" action="../../m/kpri.model.profile-updater.php?a=1&nip=<?php echo $_GET['nip'];?>" method="post">
+                <div class=ubah_level_184_9>
+                <div class="kolom_level_184_10"></div><span  class="level_184_11">Level</span>
+                <div class="kolom_pilihan_level_184_12">
+                <select class="kolom_pilihan_level_184_12_16" name="level" id="level" onchange="document.getElementById('update-level').submit();">
+                <?php
+                switch ($data['level']) {
+                    case '1':{
+                        echo '<option value="1" selected>Anggota</option>';
+                        echo '<option value="2">Pimpinan</option>';
+                        echo '<option value="3">Pegawai</option>';
+                        echo '<option value="4">Admin</option>';
+                    }
+                    case '2':{
+                        echo '<option value="1">Anggota</option>';
+                        echo '<option value="2" selected>Pimpinan</option>';
+                        echo '<option value="3">Pegawai</option>';
+                        echo '<option value="4">Admin</option>';
+                    }
+                    case '3':{
+                        echo '<option value="1">Anggota</option>';
+                        echo '<option value="2">Pimpinan</option>';
+                        echo '<option value="3" selected>Pegawai</option>';
+                        echo '<option value="4">Admin</option>';
+                    }
+                    case '4':{
+                        echo '<option value="1">Anggota</option>';
+                        echo '<option value="2">Pimpinan</option>';
+                        echo '<option value="3">Pegawai</option>';
+                        echo '<option value="4" selected>Admin</option>';
+                    }
+                    default: {
+                        echo '<option value="1">Anggota</option>';
+                        echo '<option value="2">Pimpinan</option>';
+                        echo '<option value="3">Pegawai</option>';
+                        echo '<option value="4">Admin</option>';
+                    }
+                }
+                ?>
+                </select>
                 </div>
                 </div>
-                <div class=tombol_ubah_pasword_165_6>
-                <div class="tombol_selanjitnya_165_7"></div><span  class="ubah_kata_sandi_165_8">RESET KATA SANDI</span>
-                <button class="tombol_selanjitnya_165_7" type="button" onclick="window.open('../../m/kpri.model.reset-password.php?nip=<?php echo $_GET['nip'];?>', '_SELF')">RESET SANDI</button>
+                </form>
+                <form id="update-status" action="../../m/kpri.model.profile-updater.php?a=2&nip=<?php echo $_GET['nip'];?>" method="post" onchange="document.getElementById('update-status').submit();"> 
+                <div class=ubah_status_184_15>
+                <div class="kolom_status_184_16"></div><span  class="status_184_17">Status</span>
+                <div class="kolom_pilihan_status_184_18">
+                <select class="kolom_pilihan_status_184_18_16" name="status" id="status">
+                <?php
+                switch ($data['status']){
+                    case '1':{
+                        echo '<option value="1" selected>Aktif</option>';
+                        echo '<option value="2">Nonaktif</option>';
+                    }
+                    case '2':{
+                        echo '<option value="1">Aktif</option>';
+                        echo '<option value="2" selected>Nonaktif</option>';
+                    }
+                    default: {
+                        echo '<option value="1">Aktif</option>';
+                        echo '<option value="2">Nonaktif</option>';
+                    }
+                }
+                ?>
+                </select>
                 </div>
-                <div class=tombol_selanjutnya_1_222>
-                <div class="tombol_selanjitnya_1_223"></div><span  class="simpan_1_224">SIMPAN</span>
-                <input type="submit" name="submit" value="SIMPAN" class="tombol_selanjitnya_1_223">
                 </div>
-                <div class=tombol_kembali_1_225>
-                <div class="tombol_selanjitnya_1_226"></div><span  class="kembali_1_227">KEMBALI</span>
-                <button class="tombol_selanjitnya_1_226" type="button" onclick="window.open('../../c/kpri.c.php?action=profile&nip=<?php echo $_GET['nip'];?>', '_SELF')">KEMBALI</button>
-                </div>
+                </form>
+                
                 <?php }} ?>
                 <?php
             }

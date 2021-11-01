@@ -7,11 +7,11 @@ else {
     ?>
     <table id="tabel-member" cellpadding="5" cellspacing="0">
 	<tr>
-		<th>NIP</th>
-		<th>Nama</th>
-		<th>Jenis Kelamin</th>
-		<th>Instansi</th>
-		<th>Status</th>
+		<th onclick="sortTable(0)">NIP</th>
+		<th onclick="sortTable(1)">Nama</th>
+		<th onclick="sortTable(2)">Jenis Kelamin</th>
+		<th onclick="sortTable(3)">Instansi</th>
+		<th onclick="sortTable(4)">Status</th>
 		<th>Aksi</th>
 	</tr>
 	<?php if(mysqli_num_rows($query)>0) { ?>
@@ -20,7 +20,7 @@ else {
 		?>
 		<tr>
 			<td><?php echo $data["nip"];?></td>
-			<td><a href="../../c/kpri.c.php?action=profile&nip=<?php echo $data["nip"];?>"><?php echo $data["nama"];?></a></td>
+			<td><?php echo $data["nama"];?></td>
 			<td><?php echo $data["jenis_kelamin"];?></td>
 			<td><?php echo $data["instansi"];?></td>
 			<td><?php echo $data["status"];?></td>

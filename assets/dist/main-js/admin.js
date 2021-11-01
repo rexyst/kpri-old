@@ -21,3 +21,5 @@ function member(){
 function employee(){
     window.open('../../c/kpri.c.php?action=employee', '_SELF');
 }
+
+

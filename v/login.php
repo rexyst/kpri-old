@@ -12,7 +12,7 @@
                     <div class="form_login_background_1_236"></div><span  class="masuk_1_237">MASUK</span>
                     <div class=nip_1_238>
                         <div class="kolom_nip_1_239 tooltip">
-                            <input class="kpri-input" required name="nip" id="kpri-nip" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="18" placeholder="ex: 194508171998011001">
+                            <input class="kpri-input" required name="nip" id="kpri-nip" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="18" placeholder="ex: 194508171998011001" autofocus>
                             <span class="tooltiptext">Nomor Induk Pegawai Anda</span>
                         </div><span  class="teks_nip_1_240">NIP</span>
                     </div>

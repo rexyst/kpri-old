@@ -250,6 +250,18 @@ if($act == 'employee'){
     header('location:../v/admin/employee.php');
 }
 // end employee-view-controller
+
+// start employee-search-controller
+if($act == 'search-employee'){
+    header('location:../v/admin/employee.php?action=search&name='.$_POST['name'].'&option=employee');
+}
+// end employee-search-controller
+
+// start member-search-controller
+if($act == 'search-member'){
+    header('location:../v/admin/member.php?action=search&name='.$_POST['name'].'&option=member');
+}
+// end member-search-controller
 // end view-controller
 
 ?>

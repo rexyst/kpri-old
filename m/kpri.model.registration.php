@@ -142,7 +142,7 @@ try {
         }
         
         
-        // up foto ktp 3x4
+        // up foto ktp 3x4 and foto profil
         // Check if image file is a actual image or fake image
         if(isset($_POST["submit"])) {
             $check = getimagesize($_FILES["foto-3x4"]["tmp_name"]);
@@ -174,35 +174,7 @@ try {
             // if everything is ok, try to upload file
         } else {
             if (move_uploaded_file($_FILES["foto-3x4"]["tmp_name"], $target_filec)) {
-                $overallstatus = 1;
-                ?>
-                <script>
-                console.log(<?php echo "Berkas ". htmlspecialchars( basename( $_FILES["foto-3x4"]["name"])). " telah diunggah.";?>);
-                </script>
-                <?php
-            } else {
-                $overallstatus = 0;
-                ?>
-                <script>console.log("Terdapat masalah saat mengunggah berkas anda")
-                <?php
-            }
-        }
-        
-        
-        // up foto profil    
-        // Check if file already exists
-        if (file_exists($target_filed)) {
-            $uploadOkd = 0;
-        } else {
-            $uploadOkd = 1;
-        }
-        
-        // Check if $uploadOkd is set to 0 by an error
-        if ($uploadOkd == 0) {
-            $overallstatus = 0;
-            // if everything is ok, try to upload file
-        } else {
-            if (move_uploaded_file($_FILES["foto-3x4"]["tmp_name"], $target_filed)) {
+                copy($target_filec, $target_filed);
                 $overallstatus = 1;
                 ?>
                 <script>
@@ -242,7 +214,7 @@ try {
             }
             
             $sqlc = "INSERT INTO `akun` (`nip`, `nama`, `jenis_kelamin`, `kata_sandi`, `tempat_lahir`, `tanggal_lahir`, `alamat_rumah`, `kode_pos`, `nomor_hp`, `instansi`, `alamat_instansi`, `ktp_suami`, `ktp_istri`, `foto_3x4`, `tanggal_registrasi`, `foto_profil`, `status`, `level`, `nomor_rekening`) 
-            VALUES (".$nip.", '".$nama."', ".$kelamin.", '".$sandi."', '".$tempatLahir."', '".date_format($tanggalLahir,"d/m/Y")."', '".$alamatRumah."', ".$pos.", ".$hp.", '".$instansi."', '".$alamatInstansi."', '".$ftKTPSuami."', '".$ftKTPIstri."', '".$ft3x4."', '".date("d/m/Y")."', '".$ft3x4."', '1', '1', ".$rekening.")";
+            VALUES (".$nip.", '".$nama."', ".$kelamin.", '".$sandi."', '".$tempatLahir."', '".date_format($tanggalLahir,"d/m/Y")."', '".$alamatRumah."', ".$pos.", ".$hp.", '".$instansi."', '".$alamatInstansi."', '".$ftKTPSuami."', '".$ftKTPIstri."', '".$ft3x4."', '".date("d/m/Y")."', '".$ftprofile."', '1', '1', ".$rekening.")";
             
             if ($con->query($sqlc) === TRUE) {
                 ?>
@@ -275,8 +247,8 @@ try {
         } else {
             ?>
             <script>
-            console.log("NIP sudah terdaftar");
-            var z = confirm("NIP anda sudah terdaftar, silahkan masuk dengan akun anda.");
+            console.log("Gagal menyimpan data personal");
+    var z = confirm("Gagal mendaftar, silahkan hubungi staff KPRI untuk informasi lebih lanjut. Terima kasih. #ERROR-CODE:01");
             if (z == true) {
                 window.open('../index.php', '_SELF');
             }
@@ -289,8 +261,8 @@ try {
     } else {
         ?>
         <script>
-        console.log("Gagal menyimpan data personal");
-        var z = confirm("Gagal mendaftar, silahkan hubungi staff KPRI untuk informasi lebih lanjut. Terima kasih.");
+        console.log("NIP sudah terdaftar");
+            var z = confirm("NIP anda sudah terdaftar, silahkan masuk dengan akun anda.");
         if (z == true) {
             window.open('../index.php', '_SELF');
         }
@@ -304,7 +276,7 @@ try {
     ?>
     <script>
     console.log("Gagal menyimpan data personal");
-    var z = confirm("Gagal mendaftar, silahkan hubungi staff KPRI untuk informasi lebih lanjut. Terima kasih.");
+    var z = confirm("Gagal mendaftar, silahkan hubungi staff KPRI untuk informasi lebih lanjut. Terima kasih. #ERROR-CODE:02");
     if (z == true) {
         window.open('../index.php', '_SELF');
     }
