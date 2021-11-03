@@ -28,6 +28,7 @@ include('../../m/kpri.model.profile.php');
 </div>
 
 </div>
+
 </body>
 <script src="../../assets/dist/main-js/jquery-3.3.1.min.js"></script>
 <script src="../../assets/dist/main-js/kpri-main.js"></script>

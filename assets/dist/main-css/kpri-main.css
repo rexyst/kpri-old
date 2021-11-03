@@ -251,3 +251,34 @@ a {
   border-radius: 8px;
   background: #2E9BBD;
 }
+
+.table-sort:hover {
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+}
+
+.modal-footer-left {
+  width: 50%;
+}
+
+.modal-footer-right {
+  width: 50%;
+}
+
+.kpri-tombol-ubah {
+  width: 123px;
+  height: 31px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(35, 92, 167);
+  margin-top: 13px;
+  font-weight: bold;
+}
+
+.kpri-tombol-ubah:hover {
+  background-color: rgb(88, 86, 230);
+  cursor: pointer;
+}

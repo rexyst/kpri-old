@@ -8,8 +8,8 @@ else {
         while ($data = mysqli_fetch_array($query)) {
             ?>
             <div class="foto_profil_1_113">
-            <img id=kpri-ubah-foto-profil src="../../assets/i/foto-profil.png">
-            <img id="foto-profil" src="../../assets/i/user_profil/<?php echo $data['foto_profil']; ?>">
+            <img id=kpri-ubah-foto-profil onclick="ubahFotoProfil()" src="../../assets/i/foto-profil.png">
+            <img id="foto-profil" onclick="ubahFotoProfil()" src="../../assets/i/user_profil/<?php echo $data['foto_profil']; ?>">
             </div>
             <div class=kolom_nama_1_114><span  class="nama_1_115">Nama</span><span  class="__1_116">: <?php echo $data['nama']; ?></span></div>
             <div class=kolom_nip_1_117><span  class="nip_1_118">NIP </span><span  class="__1_119">: <?php echo $data['nip']; ?></span></div>
@@ -40,11 +40,16 @@ else {
             <img src="../../assets/i/user_ktp_suami/<?php echo $data['ktp_suami'];?>">
             </div>
             <div class="modal-footer">
+            <div class="modal-footer-left">
             <h3>KPRI Wiyata Usaha</h3>
             </div>
+            <div class="modal-footer-right">
+            <button type="button" class="kpri-tombol-ubah" onclick="ubahFotoKTPSuami()">Ubah Foto</button>
             </div>
             </div>
-
+            </div>
+            </div>
+            
             <div id="modal-ktp-istri" class="modal">
             <div class="modal-content">
             <div class="modal-header">
@@ -55,11 +60,16 @@ else {
             <img src="../../assets/i/user_ktp_istri/<?php echo $data['ktp_istri'];?>">
             </div>
             <div class="modal-footer">
+            <div class="modal-footer-left">
             <h3>KPRI Wiyata Usaha</h3>
             </div>
+            <div class="modal-footer-right">
+            <button type="button" class="kpri-tombol-ubah" onclick="ubahFotoKTPIstri()">Ubah Foto</button>
             </div>
             </div>
-
+            </div>
+            </div>
+            
             <div id="modal-3x4" class="modal">
             <div class="modal-content">
             <div class="modal-header">
@@ -70,9 +80,115 @@ else {
             <img src="../../assets/i/user_3x4/<?php echo $data['foto_3x4'];?>">
             </div>
             <div class="modal-footer">
+            <div class="modal-footer-left">
             <h3>KPRI Wiyata Usaha</h3>
             </div>
+            <div class="modal-footer-right">
+            <button type="button" class="kpri-tombol-ubah" onclick="ubahFoto3x4()">Ubah Foto</button>
             </div>
+            </div>
+            </div>
+            </div>
+            
+            
+            <!-- modal ubah foto profil -->
+            <div id="modal-ubah-foto-profil" class="modal">
+            <form action="../../m/kpri.model.profile-updater.php?a=8&nip=<?php echo $data['nip'];?>" method="post" enctype="multipart/form-data">
+            <div class="modal-content">
+            <div class="modal-header">
+            <span id="closez" class="close">&times;</span>
+            <h2>Ubah Foto Profil</h2>
+            </div>
+            <div class="modal-body">
+            <div class="input-foto">
+            <input class="kpri-input" type="file" name="foto-profile" id="foto-ktp-suami" required>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <div class="modal-footer-left">
+            <h3>KPRI Wiyata Usaha</h3>
+            </div>
+            <div class="modal-footer-right">
+            <input type="submit" name="submit" value="Simpan" class="kpri-tombol-ubah">
+            </div>
+            </div>
+            </div>
+            </form>
+            </div>
+
+            <!-- modal ubah foto KTP suami -->
+            <div id="modal-ubah-foto-ktp-suami" class="modal">
+            <form action="../../m/kpri.model.profile-updater.php?a=5&nip=<?php echo $data['nip'];?>" method="post" enctype="multipart/form-data">
+            <div class="modal-content">
+            <div class="modal-header">
+            <span id="closezz" class="close">&times;</span>
+            <h2>Ubah Foto KTP Suami</h2>
+            </div>
+            <div class="modal-body">
+            <div class="input-foto">
+            <input class="kpri-input" type="file" name="foto-ktp-suami" id="foto-ktp-suami" required>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <div class="modal-footer-left">
+            <h3>KPRI Wiyata Usaha</h3>
+            </div>
+            <div class="modal-footer-right">
+            <input type="submit" name="submit" value="Simpan" class="kpri-tombol-ubah">
+            </div>
+            </div>
+            </div>
+            </form>
+            </div>
+
+            <!-- modal ubah foto KTP Istri -->
+            <div id="modal-ubah-foto-ktp-Istri" class="modal">
+            <form action="../../m/kpri.model.profile-updater.php?a=6&nip=<?php echo $data['nip'];?>" method="post" enctype="multipart/form-data">
+            <div class="modal-content">
+            <div class="modal-header">
+            <span id="closezzz" class="close">&times;</span>
+            <h2>Ubah Foto KTP Istri</h2>
+            </div>
+            <div class="modal-body">
+            <div class="input-foto">
+            <input class="kpri-input" type="file" name="foto-ktp-istri" id="foto-ktp-Istri" required>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <div class="modal-footer-left">
+            <h3>KPRI Wiyata Usaha</h3>
+            </div>
+            <div class="modal-footer-right">
+            <input type="submit" name="submit" value="Simpan" class="kpri-tombol-ubah">
+            </div>
+            </div>
+            </div>
+            </form>
+            </div>
+
+            <!-- modal ubah foto 3x4 -->
+            <div id="modal-ubah-foto-3x4" class="modal">
+            <form action="../../m/kpri.model.profile-updater.php?a=7&nip=<?php echo $data['nip'];?>" method="post" enctype="multipart/form-data">
+            <div class="modal-content">
+            <div class="modal-header">
+            <span id="closezzzz" class="close">&times;</span>
+            <h2>Ubah Foto Profil</h2>
+            </div>
+            <div class="modal-body">
+            <div class="input-foto">
+            <input class="kpri-input" type="file" name="foto-3x4" id="foto-3x4" required>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <div class="modal-footer-left">
+            <h3>KPRI Wiyata Usaha</h3>
+            </div>
+            <div class="modal-footer-right">
+            <input type="submit" name="submit" value="Simpan" class="kpri-tombol-ubah">
+            </div>
+            </div>
+            </div>
+            </form>
             </div>
             
             <?php }} ?>

@@ -7,19 +7,21 @@ if(isset($_GET['nip'])){
     else {
         if(mysqli_num_rows($query)>0) { 
             while ($data = mysqli_fetch_array($query)) {
+                $tanggal = DateTime::createFromFormat('d/m/Y', $data['tanggal_lahir'])->format('Y-m-d');
                 ?>
                 <form action="../../m/kpri.model.profile-updater.php?a=3&nip=<?php echo $_GET['nip'];?>" method="post">
                 <div class="ellipse_1_1_181"></div>
                 
                 <div class=kolom_nama_167_20><span  class="nama_167_21">Nama</span><span  class="__167_22">:</span>
                 <div class="kolom_nama_177_2">
-                <input class="kpri-input uppercased" id="nama" name="nama" maxlength="50" type="text" required>
+                <input class="kpri-input uppercased" id="nama" name="nama" maxlength="50" type="text" value="<?php echo $data['nama']?>" required>
                 </div>
                 </div>
                 <div class=kolom_nip_165_20><span  class="nip_165_21">NIP</span><span  class="__165_22">:</span>
                 <div class="kolom_nip_177_9">
                 <input class="kpri-input" id="nip" name="nip" maxlength="18" type="number"
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                value="<?php echo $data['nip']; ?>"
                 required>
                 </div>
                 </div>
@@ -33,17 +35,17 @@ if(isset($_GET['nip'])){
                 </div>
                 <div class=kolom_tempat_lahir_165_26><span  class="tempat_lahir_165_27">Tempat Lahir</span><span  class="__165_28">:</span>
                 <div class="kolom_tempat_lahir_177_10">
-                <input class="kpri-input uppercased" id="tempat-lahir" name="tempat-lahir" maxlength="30" type="text" required>
+                <input class="kpri-input uppercased" id="tempat-lahir" name="tempat-lahir" maxlength="30" type="text" value="<?php echo $data['tempat_lahir']; ?>"required>
                 </div>
                 </div>
                 <div class=kolom_tanggal_lahir_165_29><span  class="tanggal_lahir_165_30">Tanggal Lahir</span><span  class="__165_31">:</span>
                 <div class="kolom_tanggal_lahir_177_11">
-                <input class="kpri-input" id="tanggal-lahir" name="tanggal-lahir" type="date" required>
+                <input class="kpri-input" id="tanggal-lahir" name="tanggal-lahir" type="date" format="d/m/Y" value="<?php echo $tanggal; ?>" required>
                 </div>
                 </div>
                 <div class=kolom_alamat_rumah_1_194><span  class="alamat_rumah_1_195">Alamat Rumah</span><span  class="__1_196">:</span>
                 <div class="kolom_alamat_rumah_1_221">
-                <textarea class="uppercased" name="alamat-rumah" id="alamat-rumah" cols="40" rows="5" maxlength="200" required><?php echo $data['alamat_rumah'] ;?></textarea>
+                <textarea class="kpri-input uppercased" name="alamat-rumah" id="alamat-rumah" cols="40" rows="5" maxlength="200" required><?php echo $data['alamat_rumah'] ;?></textarea>
                 </div>
                 </div>
                 <div class=kolom_kode_pos_165_16><span  class="kode_pos_165_17">Kode Pos</span><span  class="__165_18">:</span>
@@ -95,31 +97,36 @@ if(isset($_GET['nip'])){
                         echo '<option value="2">Pimpinan</option>';
                         echo '<option value="3">Pegawai</option>';
                         echo '<option value="4">Admin</option>';
-                    }
+                        break;
+                    };
                     case '2':{
                         echo '<option value="1">Anggota</option>';
                         echo '<option value="2" selected>Pimpinan</option>';
                         echo '<option value="3">Pegawai</option>';
                         echo '<option value="4">Admin</option>';
-                    }
+                        break;
+                    };
                     case '3':{
                         echo '<option value="1">Anggota</option>';
                         echo '<option value="2">Pimpinan</option>';
                         echo '<option value="3" selected>Pegawai</option>';
                         echo '<option value="4">Admin</option>';
-                    }
+                        break;
+                    };
                     case '4':{
                         echo '<option value="1">Anggota</option>';
                         echo '<option value="2">Pimpinan</option>';
                         echo '<option value="3">Pegawai</option>';
                         echo '<option value="4" selected>Admin</option>';
-                    }
+                        break;
+                    };
                     default: {
                         echo '<option value="1">Anggota</option>';
                         echo '<option value="2">Pimpinan</option>';
                         echo '<option value="3">Pegawai</option>';
                         echo '<option value="4">Admin</option>';
-                    }
+                        break;
+                    };
                 }
                 ?>
                 </select>
@@ -136,15 +143,18 @@ if(isset($_GET['nip'])){
                     case '1':{
                         echo '<option value="1" selected>Aktif</option>';
                         echo '<option value="2">Nonaktif</option>';
-                    }
+                        break;
+                    };
                     case '2':{
                         echo '<option value="1">Aktif</option>';
                         echo '<option value="2" selected>Nonaktif</option>';
-                    }
+                        break;
+                    };
                     default: {
                         echo '<option value="1">Aktif</option>';
                         echo '<option value="2">Nonaktif</option>';
-                    }
+                        break;
+                    };
                 }
                 ?>
                 </select>

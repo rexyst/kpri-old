@@ -19,11 +19,11 @@ else {
     ?>
     <table id="tabel-member" cellpadding="5" cellspacing="0">
 	<tr>
-		<th onclick="sortTable(0)">NIP</th>
-		<th onclick="sortTable(1)">Nama</th>
-		<th onclick="sortTable(2)">Jenis Kelamin</th>
-		<th onclick="sortTable(3)">Jabatan</th>
-		<th onclick="sortTable(4)">Status</th>
+		<th class="table-sort" onclick="sortTable(0)">NIP</th>
+		<th class="table-sort" onclick="sortTable(1)">Nama</th>
+		<th class="table-sort" onclick="sortTable(2)">Jenis Kelamin</th>
+		<th class="table-sort" onclick="sortTable(3)">Jabatan</th>
+		<th class="table-sort" onclick="sortTable(4)">Status</th>
 		<th>Aksi</th>
 	</tr>
 	<?php if(mysqli_num_rows($query)>0) { ?>

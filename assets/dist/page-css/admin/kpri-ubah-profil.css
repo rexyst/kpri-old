@@ -682,3 +682,14 @@
 #laki-laki {
 	margin-left:196px;
 }
+
+#alamat-rumah {
+	border: none;
+	height: 85px;
+	width: 299px;
+}
+
+#alamat-instansi {
+	height: 85px;
+	width: 299px;
+}
