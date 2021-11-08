@@ -22,4 +22,25 @@ function employee(){
     window.open('../../c/kpri.c.php?action=employee', '_SELF');
 }
 
+function ubahsandi(){
+    var moda = document.getElementById('modal-ubah-sandi');
+    moda.style.display = 'block';
+}
 
+var moda = document.getElementById("modal-ubah-sandi");
+
+var spanmoda = document.getElementById("closesandi");
+
+spanmoda.onclick = function() {
+  moda.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == moda) {
+      moda.style.display = "none";
+    }
+  }
+
+function resetsandi(){
+    window.open('../../')
+}

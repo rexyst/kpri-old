@@ -265,16 +265,45 @@ if($_GET['a']==1){
             <?php
         }
     }
+} else if($_GET['a']==9){
+    if($_POST['sandi-baru']==$_POST['konfirmasi-sandi']){
+        $sql = "UPDATE `akun` SET `kata_sandi` = '".$_POST['sandi-baru']."' where `nip` = ".$_GET['nip'];
+    } else {
+        ?>
+        <script type="text/javascript">
+        alert("<?php echo 'Kata sandi tidak cocok.'; ?>");
+        window.open('../c/kpri.c.php?action=profile&nip=<?php echo $_GET["nip"];?>', '_SELF');
+        </script>
+        <?php
+    }
+} else if($_GET['a']==10){
+    $sql = "UPDATE `akun` SET `kata_sandi` = '12345678' WHERE `nip`=".$_GET['nip'];
 }
 
 try {
     if($query = $con->query($sql)){
+        if($_GET['a']==9){
+            ?>
+        <script type="text/javascript">
+        alert("<?php echo 'Berhasil mengubah sandi.'; ?>");
+        window.open('../index.php', '_SELF');
+        </script>
+        <?php
+        } else if($_GET['a']==10){
+            ?>
+        <script type="text/javascript">
+        alert("<?php echo 'Berhasil reset sandi. Sandi baru adalah 12345678'; ?>");
+        window.open('../c/kpri.c.php?action=profile&nip=<?php echo $_GET["nip"];?>', '_SELF');
+        </script>
+        <?php
+        } else {
         ?>
         <script type="text/javascript">
         alert("<?php echo 'Berhasil menyimpan data.'; ?>");
         window.open('../c/kpri.c.php?action=profile&nip=<?php echo $_GET["nip"];?>', '_SELF');
         </script>
         <?php
+        }
     } else {
         ?>
         <script type="text/javascript">

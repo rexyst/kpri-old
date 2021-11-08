@@ -29,6 +29,18 @@ else {
             <div class="tombol_selanjitnya_1_145"></div>
             <button class="tombol_selanjitnya_1_145" onclick="window.open('../../c/kpri.c.php?action=profile-update&nip=<?php echo $data['nip'];?>', '_SELF')"><span  class="update_profil_1_146">UPDATE PROFIL</span></button>
             </div>
+            <div class=tombol_update_profil_1_1441>
+            <div class="tombol_selanjitnya_1_145"></div>
+            <?php
+            if($_GET['nip']==$_SESSION['nip']){
+                echo '<button class="tombol_selanjitnya_1_145" onclick="ubahsandi()"><span  class="update_profil_1_146">UBAH SANDI</span></button>';
+            } else {
+                echo '<button class="tombol_selanjitnya_1_145" onclick="window.open('."'".'../../m/kpri.model.profile-updater.php?a=10&nip='.$data['nip']."'".', '."'".'_SELF'."'".')"><span  class="update_profil_1_146">RESET SANDI</span></button>';
+            }
+            ?>
+            </div>
+            
+            
             
             <div id="modal-ktp-suami" class="modal">
             <div class="modal-content">
@@ -37,13 +49,14 @@ else {
             <h2>Foto KTP Suami</h2>
             </div>
             <div class="modal-body">
-            <img src="../../assets/i/user_ktp_suami/<?php echo $data['ktp_suami'];?>">
+            <img src="../../assets/i/user_ktp_suami/<?php echo $data['ktp_suami'];?>" alt="../../assets/i/user_ktp_suami/<?php echo $data['ktp_suami'];?>">
             </div>
             <div class="modal-footer">
             <div class="modal-footer-left">
             <h3>KPRI Wiyata Usaha</h3>
             </div>
             <div class="modal-footer-right">
+            <a href="../../assets/i/user_ktp_suami/<?php echo $data['ktp_suami'];?>" target="_blank"><button type="button" class="kpri-tombol-ubah">Ukuran Penuh</button></a>
             <button type="button" class="kpri-tombol-ubah" onclick="ubahFotoKTPSuami()">Ubah Foto</button>
             </div>
             </div>
@@ -57,13 +70,14 @@ else {
             <h2>Foto KTP Istri</h2>
             </div>
             <div class="modal-body">
-            <img src="../../assets/i/user_ktp_istri/<?php echo $data['ktp_istri'];?>">
+            <img src="../../assets/i/user_ktp_istri/<?php echo $data['ktp_istri'];?>" alt="../../assets/i/user_ktp_istri/<?php echo $data['ktp_istri'];?>">
             </div>
             <div class="modal-footer">
             <div class="modal-footer-left">
             <h3>KPRI Wiyata Usaha</h3>
             </div>
             <div class="modal-footer-right">
+            <a href="../../assets/i/user_ktp_istri/<?php echo $data['ktp_istri'];?>" target="_blank"><button type="button" class="kpri-tombol-ubah">Ukuran Penuh</button></a>
             <button type="button" class="kpri-tombol-ubah" onclick="ubahFotoKTPIstri()">Ubah Foto</button>
             </div>
             </div>
@@ -77,13 +91,14 @@ else {
             <h2>Foto 3x4</h2>
             </div>
             <div class="modal-body">
-            <img src="../../assets/i/user_3x4/<?php echo $data['foto_3x4'];?>">
+            <img src="../../assets/i/user_3x4/<?php echo $data['foto_3x4'];?>" alt="../../assets/i/user_3x4/<?php echo $data['foto_3x4'];?>">
             </div>
             <div class="modal-footer">
             <div class="modal-footer-left">
             <h3>KPRI Wiyata Usaha</h3>
             </div>
             <div class="modal-footer-right">
+            <a href="../../assets/i/user_3x4/<?php echo $data['foto_3x4'];?>" target="_blank"><button type="button" class="kpri-tombol-ubah">Ukuran Penuh</button></a>
             <button type="button" class="kpri-tombol-ubah" onclick="ubahFoto3x4()">Ubah Foto</button>
             </div>
             </div>
@@ -101,7 +116,7 @@ else {
             </div>
             <div class="modal-body">
             <div class="input-foto">
-            <input class="kpri-input" type="file" name="foto-profile" id="foto-ktp-suami" required>
+            <input class="kpri-input" type="file" name="foto-profile" id="foto-profil" required>
             </div>
             </div>
             <div class="modal-footer">
@@ -115,7 +130,7 @@ else {
             </div>
             </form>
             </div>
-
+            
             <!-- modal ubah foto KTP suami -->
             <div id="modal-ubah-foto-ktp-suami" class="modal">
             <form action="../../m/kpri.model.profile-updater.php?a=5&nip=<?php echo $data['nip'];?>" method="post" enctype="multipart/form-data">
@@ -140,7 +155,7 @@ else {
             </div>
             </form>
             </div>
-
+            
             <!-- modal ubah foto KTP Istri -->
             <div id="modal-ubah-foto-ktp-Istri" class="modal">
             <form action="../../m/kpri.model.profile-updater.php?a=6&nip=<?php echo $data['nip'];?>" method="post" enctype="multipart/form-data">
@@ -165,7 +180,7 @@ else {
             </div>
             </form>
             </div>
-
+            
             <!-- modal ubah foto 3x4 -->
             <div id="modal-ubah-foto-3x4" class="modal">
             <form action="../../m/kpri.model.profile-updater.php?a=7&nip=<?php echo $data['nip'];?>" method="post" enctype="multipart/form-data">
@@ -177,6 +192,54 @@ else {
             <div class="modal-body">
             <div class="input-foto">
             <input class="kpri-input" type="file" name="foto-3x4" id="foto-3x4" required>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <div class="modal-footer-left">
+            <h3>KPRI Wiyata Usaha</h3>
+            </div>
+            <div class="modal-footer-right">
+            <input type="submit" name="submit" value="Simpan" class="kpri-tombol-ubah">
+            </div>
+            </div>
+            </div>
+            </form>
+            </div>
+            
+            <!-- modal ubah kata sandi -->
+            <div id="modal-ubah-sandi" class="modal">
+            <form action="../../m/kpri.model.profile-updater.php?a=9&nip=<?php echo $data['nip'];?>" method="post" enctype="multipart/form-data">
+            <div class="modal-content">
+            <div class="modal-header">
+            <span id="closesandi" class="close">&times;</span>
+            <h2>Ubah Kata Sandi</h2>
+            </div>
+            <div class="modal-body">
+            <div class="input-foto">
+            <div class="kata_sandi_1_2411">
+            <div class="kolom_kata_sandi_1_2421 tooltip">
+            <input class="kpri-input kpri-specials" required name="sandi-baru" id="kpri-kata-sandia" type="password" placeholder="KATA SANDI BARU">
+            <span class="tooltiptext">Kata sandi baru</span>
+            <span class="kpri-sandi">
+            <a id="tampilkan-sandia" href="#" onclick="tampilsandia()">
+            <img class="kpri-logo-specials" id="kpri-logo-passworda" style="position: absolute; left: 126px; top: 6px;" src="../../assets/i/show.png">
+            </a>
+            </span>
+            </div>
+            </div>
+
+            <div class="kata_sandi_1_2412">
+            <div class="kolom_kata_sandi_1_2422 tooltip">
+            <input class="kpri-input kpri-specials" required name="konfirmasi-sandi" id="kpri-kata-sandib" type="password" placeholder="KONFIRMASI KATA SANDI BARU">
+            <span class="tooltiptext">Konfirmasi kata sandi baru</span>
+            <span class="kpri-sandi">
+            <a id="tampilkan-sandib" href="#" onclick="tampilsandib()">
+            <img class="kpri-logo-specials" id="kpri-logo-passwordb" style="position: absolute; left: 126px; top: 6px;" src="../../assets/i/show.png">
+            </a>
+            </span>
+            </div>
+            </div>
+
             </div>
             </div>
             <div class="modal-footer">

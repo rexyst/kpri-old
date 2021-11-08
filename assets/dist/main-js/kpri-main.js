@@ -38,6 +38,46 @@ function rsembunyisandi(){
   c.setAttribute("src", "../assets/i/show.png");
 };
 
+function tampilsandia(){
+  var a = document.getElementById("tampilkan-sandia");
+  var b = document.getElementById("kpri-kata-sandia");
+  var c = document.getElementById("kpri-logo-passworda");
+  a.setAttribute("id", "sembunyikan-sandia");
+  a.setAttribute("onclick", "sembunyisandia()");
+  b.setAttribute("type", "text");
+  c.setAttribute("src", "../../assets/i/hide.png");
+};
+
+function sembunyisandia(){
+  var a = document.getElementById("sembunyikan-sandia");
+  var b = document.getElementById("kpri-kata-sandia");
+  var c = document.getElementById("kpri-logo-passworda");
+  a.setAttribute("id", "tampilkan-sandia");
+  a.setAttribute("onclick", "tampilsandia()")
+  b.setAttribute("type", "password");
+  c.setAttribute("src", "../../assets/i/show.png");
+};
+
+function tampilsandib(){
+  var a = document.getElementById("tampilkan-sandib");
+  var b = document.getElementById("kpri-kata-sandib");
+  var c = document.getElementById("kpri-logo-passwordb");
+  a.setAttribute("id", "sembunyikan-sandib");
+  a.setAttribute("onclick", "sembunyisandib()");
+  b.setAttribute("type", "text");
+  c.setAttribute("src", "../../assets/i/hide.png");
+};
+
+function sembunyisandib(){
+  var a = document.getElementById("sembunyikan-sandib");
+  var b = document.getElementById("kpri-kata-sandib");
+  var c = document.getElementById("kpri-logo-passwordb");
+  a.setAttribute("id", "tampilkan-sandib");
+  a.setAttribute("onclick", "tampilsandib()")
+  b.setAttribute("type", "password");
+  c.setAttribute("src", "../../assets/i/show.png");
+};
+
 function home(){
   window.open('../../c/kpri.c.php?action=home', '_SELF');
 };

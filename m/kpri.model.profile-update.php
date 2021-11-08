@@ -92,39 +92,29 @@ if(isset($_GET['nip'])){
                 <select class="kolom_pilihan_level_184_12_16" name="level" id="level" onchange="document.getElementById('update-level').submit();">
                 <?php
                 switch ($data['level']) {
-                    case '1':{
-                        echo '<option value="1" selected>Anggota</option>';
-                        echo '<option value="2">Pimpinan</option>';
-                        echo '<option value="3">Pegawai</option>';
-                        echo '<option value="4">Admin</option>';
-                        break;
-                    };
-                    case '2':{
-                        echo '<option value="1">Anggota</option>';
-                        echo '<option value="2" selected>Pimpinan</option>';
-                        echo '<option value="3">Pegawai</option>';
-                        echo '<option value="4">Admin</option>';
-                        break;
-                    };
                     case '3':{
-                        echo '<option value="1">Anggota</option>';
-                        echo '<option value="2">Pimpinan</option>';
-                        echo '<option value="3" selected>Pegawai</option>';
-                        echo '<option value="4">Admin</option>';
+                        if($_GET['nip']==$_SESSION['nip']){
+                            echo '<option value="3" selected>Pegawai</option>';
+                        } else {
+                            echo '<option value="1">Anggota</option>';
+                            echo '<option value="2">Pimpinan</option>';
+                            echo '<option value="3" selected>Pegawai</option>';
+                            echo '<option value="4">Admin</option>';
+                        }
                         break;
                     };
                     case '4':{
-                        echo '<option value="1">Anggota</option>';
-                        echo '<option value="2">Pimpinan</option>';
-                        echo '<option value="3">Pegawai</option>';
-                        echo '<option value="4" selected>Admin</option>';
+                        if($_GET['nip']==$_SESSION['nip']){
+                            echo '<option value="4" selected>Admin</option>';
+                        } else {
+                            echo '<option value="1">Anggota</option>';
+                            echo '<option value="2">Pimpinan</option>';
+                            echo '<option value="3">Pegawai</option>';
+                            echo '<option value="4" selected>Admin</option>';
+                        }
                         break;
                     };
                     default: {
-                        echo '<option value="1">Anggota</option>';
-                        echo '<option value="2">Pimpinan</option>';
-                        echo '<option value="3">Pegawai</option>';
-                        echo '<option value="4">Admin</option>';
                         break;
                     };
                 }
@@ -141,18 +131,24 @@ if(isset($_GET['nip'])){
                 <?php
                 switch ($data['status']){
                     case '1':{
-                        echo '<option value="1" selected>Aktif</option>';
-                        echo '<option value="2">Nonaktif</option>';
+                        if($_GET['nip']==$_SESSION['nip']){
+                            echo '<option value="1" selected>Aktif</option>';
+                        } else {
+                            echo '<option value="1" selected>Aktif</option>';
+                            echo '<option value="2">Nonaktif</option>';
+                        }
                         break;
                     };
                     case '2':{
-                        echo '<option value="1">Aktif</option>';
-                        echo '<option value="2" selected>Nonaktif</option>';
+                        if($_GET['nip']==$_SESSION['nip']){
+                            echo '<option value="2" selected>Nonaktif</option>';
+                        } else {
+                            echo '<option value="1">Aktif</option>';
+                            echo '<option value="2" selected>Nonaktif</option>';
+                        }
                         break;
                     };
                     default: {
-                        echo '<option value="1">Aktif</option>';
-                        echo '<option value="2">Nonaktif</option>';
                         break;
                     };
                 }
