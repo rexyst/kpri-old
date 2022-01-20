@@ -13,10 +13,11 @@
     <div class="kolom_pinjaman_1_268"></div>
     <span  class="pinjaman_1_269">Pinjaman</span>
     <div class="dropdown-content">
-        <span>BKE</span>
-        <span>USP</span>
-        <span>Toko</span>
-        <span>Ekstra</span>
+        <span onclick="bke()">BKE</span>
+        <span onclick="usp()">USP</span>
+        <span onclick="toko()">Toko</span>
+        <span onclick="ekstra()">Ekstra</span>
+        <span onclick="haji()">Haji</span>
     </div>
   </div>
   <div class="simpanan_1_270 menu dropdown">
@@ -33,7 +34,6 @@
     <div class="kolom_profil_1_274"></div>
     <span  class="profil_1_275">Profil</span>
     <div class="dropdown-content">
-        <!-- <a href="../../c/kpri.c.php?action=profile&nip=<?php echo $_SESSION['nip'];?>"><span>Profil</span></a> -->
         <span onclick="profile()">Profil</span>
         <span onclick="logout()">Logout</span>
     </div>

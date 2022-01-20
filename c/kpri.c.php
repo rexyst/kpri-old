@@ -251,6 +251,36 @@ if($act == 'employee'){
 }
 // end employee-view-controller
 
+// start bke-view-controller
+if($act == 'bke'){
+    header('location:../v/admin/bke.php');
+}
+// end bke-view-controller
+
+// start usp-view-controller
+if($act == 'usp'){
+    header('location:../v/admin/usp.php');
+}
+// end usp-view-controller
+
+// start toko-view-controller
+if($act == 'toko'){
+    header('location:../v/admin/toko.php');
+}
+// end toko-view-controller
+
+// start ekstra-view-controller
+if($act == 'ekstra'){
+    header('location:../v/admin/ekstra.php');
+}
+// end ekstra-view-controller
+
+// start haji-view-controller
+if($act == 'haji'){
+    header('location:../v/admin/haji.php');
+}
+// end haji-view-controller
+
 // start employee-search-controller
 if($act == 'search-employee'){
     header('location:../v/admin/employee.php?action=search&name='.$_POST['name'].'&option=employee');
