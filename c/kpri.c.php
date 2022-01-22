@@ -251,6 +251,12 @@ if($act == 'employee'){
 }
 // end employee-view-controller
 
+// start all pinjaman-view-controller
+if($act == 'allPinjaman'){
+    header('location:../v/admin/pinjaman.php');
+}
+// end all pinjaman-view-controller
+
 // start bke-view-controller
 if($act == 'bke'){
     header('location:../v/admin/bke.php');

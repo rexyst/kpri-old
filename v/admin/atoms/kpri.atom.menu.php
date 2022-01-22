@@ -13,6 +13,7 @@
     <div class="kolom_pinjaman_1_268"></div>
     <span  class="pinjaman_1_269">Pinjaman</span>
     <div class="dropdown-content">
+        <span onclick="allPinjaman()">Semua</span>
         <span onclick="bke()">BKE</span>
         <span onclick="usp()">USP</span>
         <span onclick="toko()">Toko</span>

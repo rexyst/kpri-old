@@ -22,6 +22,10 @@ function employee(){
     window.open('../../c/kpri.c.php?action=employee', '_SELF');
 }
 
+function allPinjaman(){
+    window.open('../../c/kpri.c.php?action=allPinjaman', '_SELF');
+}
+
 function bke(){
     window.open('../../c/kpri.c.php?action=bke', '_SELF');
 }

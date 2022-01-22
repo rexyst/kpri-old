@@ -26,7 +26,7 @@ if(isset($_GET['action'])){
     $_SESSION['option'] = $_GET['option'];
     include('../../m/kpri.model.search.php');    
 } else {
-    $_GET['type'] = 'Ekstra';
+    $_GET['type'] = 'all';
     include('../../m/kpri.model.peminjaman.php');
 }
 

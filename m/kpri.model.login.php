@@ -29,7 +29,25 @@ if(isset($_POST['nip']) && isset($_POST['sandi'])) {
   <?php
 }
 
-$sql = "SELECT akun.`nip`, akun.`nama`,jenis_kelamin.`jenis_kelamin`,akun.`kata_sandi`,akun.`tempat_lahir`,akun.`tanggal_lahir`,akun.`alamat_rumah`,akun.`kode_pos`,akun.`nomor_hp`,instansi.nama_instansi, instansi.alamat_instansi,akun.`ktp_suami`,akun.`ktp_istri`,akun.`foto_3x4`,akun.`tanggal_registrasi`,akun.`foto_profil`,status_akun.`status`,level.`level` FROM `akun` join jenis_kelamin on akun.jenis_kelamin=jenis_kelamin.`id_jenis_kelamin` join status_akun on akun.`status`=status_akun.id_status join `level` on `akun`.`level`=`level`.`id_level` join instansi on akun.instansi = instansi.id_instansi where nip =".$nip;
+$sql = "SELECT akun.`nip`, 
+akun.`nama`,
+jenis_kelamin.`jenis_kelamin`,
+akun.`kata_sandi`,
+akun.`tempat_lahir`,
+akun.`tanggal_lahir`,
+akun.`alamat_rumah`,
+akun.`kode_pos`,
+akun.`nomor_hp`,
+instansi.nama_instansi, 
+instansi.alamat_instansi,
+akun.`ktp_suami`,
+akun.`ktp_istri`,
+akun.`foto_3x4`,
+akun.`tanggal_registrasi`,
+akun.`foto_profil`,
+status_akun.`status`,
+level.`level` 
+FROM `akun` join jenis_kelamin on akun.jenis_kelamin=jenis_kelamin.`id_jenis_kelamin` join status_akun on akun.`status`=status_akun.id_status join `level` on `akun`.`level`=`level`.`id_level` join instansi on akun.instansi = instansi.id_instansi where nip =".$nip;
 $query = $con->query($sql);
 $hasil = $query->fetch_assoc();
 if($query->num_rows == 0) {
@@ -69,7 +87,7 @@ if($query->num_rows == 0) {
     $_SESSION['alamat-rumah'] = $hasil['alamat_rumah'];
     $_SESSION['kode-pos'] = $hasil['kode_pos'];
     $_SESSION['no-hp'] = $hasil['nomor_hp'];
-    $_SESSION['instansi'] = $hasil['instansi'];
+    $_SESSION['instansi'] = $hasil['nama_instansi'];
     $_SESSION['alamat-instansi'] = $hasil['alamat_instansi'];
     $_SESSION['ktp-suami'] = $hasil['ktp_suami'];
     $_SESSION['ktp-istri'] = $hasil['ktp_istri'];
