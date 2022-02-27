@@ -13,22 +13,16 @@ include('atoms/kpri.atom.head.html');
 <?php include('atoms/kpri.atom.menu.php');?>
 
 <div class="kpri-search-bar-container">
-<form action="../../c/kpri.c.php?action=search-member" method="post">
-<input class="kpri-search-bar" type="text" name="name" placeholder="Cari Nama">
-<input class="kpri-search-button" type="submit" value="Cari">
+<input class="kpri-search-bar" type="text" id="member" onkeyup="filt('member', 1)" placeholder="Cari Nama">
 </form>
 </div>
 
 <div class="kpri-main-container">
+<table id="tabel-member" cellpadding="5" cellspacing="0">
     <?php
-    if(isset($_GET['action'])){
-        $_SESSION['name'] = $_GET['name'];
-        $_SESSION['option'] = $_GET['option'];
-        include('../../m/kpri.model.search.php');    
-    } else {
         include('../../m/kpri.model.member.php');
-    }
     ?>
+</table>
 </div>
 
 </body>

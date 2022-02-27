@@ -208,15 +208,25 @@ try {
                 <script>console.log("Berhasil menyimpan rekening");</script>
                 <?php
             } else {
+                $overallstatus = 0;
                 ?>
                 <script>console.log("Gagal menyimpan rekening");</script>
                 <?php
             }
             
-            $sqlc = "INSERT INTO `akun` (`nip`, `nama`, `jenis_kelamin`, `kata_sandi`, `tempat_lahir`, `tanggal_lahir`, `alamat_rumah`, `kode_pos`, `nomor_hp`, `instansi`, `alamat_instansi`, `ktp_suami`, `ktp_istri`, `foto_3x4`, `tanggal_registrasi`, `foto_profil`, `status`, `level`, `nomor_rekening`) 
-            VALUES (".$nip.", '".$nama."', ".$kelamin.", '".$sandi."', '".$tempatLahir."', '".date_format($tanggalLahir,"d/m/Y")."', '".$alamatRumah."', ".$pos.", ".$hp.", '".$instansi."', '".$alamatInstansi."', '".$ftKTPSuami."', '".$ftKTPIstri."', '".$ft3x4."', '".date("d/m/Y")."', '".$ftprofile."', '1', '1', ".$rekening.")";
+            $sqlc = "SELECT id_instansi, nama_instansi from instansi  where nama_instansi = ".$instansi;
+            $queryc = $con->query($sqlc);
+            $hasilc = $queryc->fetch_assoc();
+            if($queryc->num_rows == 0){
+                $con->query(`insert into instansi (nama_instansi, alamat_instansi) values ('`.$instansi.`','`.$alamatInstansi.`')`);
+            } else {
+                $instansi = $hasilc['id_instansi'];
+            }
             
-            if ($con->query($sqlc) === TRUE) {
+            $sqld = "INSERT INTO `akun` (`nip`, `nama`, `jenis_kelamin`, `kata_sandi`, `tempat_lahir`, `tanggal_lahir`, `alamat_rumah`, `kode_pos`, `nomor_hp`, `instansi`, `ktp_suami`, `ktp_istri`, `foto_3x4`, `tanggal_registrasi`, `foto_profil`, `status`, `level`, `nomor_rekening`) 
+            VALUES (".$nip.", '".$nama."', ".$kelamin.", '".$sandi."', '".$tempatLahir."', '".date_format($tanggalLahir,"d/m/Y")."', '".$alamatRumah."', ".$pos.", ".$hp.", '".$instansi."', '".$ftKTPSuami."', '".$ftKTPIstri."', '".$ft3x4."', '".date("d/m/Y")."', '".$ftprofile."', '1', '1', ".$rekening.")";
+            
+            if ($con->query($sqld) === TRUE) {
                 ?>
                 <script>
                 console.log("Berhasil menyimpan data personal");
@@ -230,6 +240,7 @@ try {
                 </script>
                 <?php
             } else {
+                $overallstatus = 0;
                 ?>
                 <script>
                 console.log("Gagal menyimpan data personal");
@@ -245,6 +256,7 @@ try {
             }
             
         } else {
+            $overallstatus = 0;
             ?>
             <script>
             console.log("Gagal menyimpan data personal");
@@ -259,6 +271,7 @@ try {
             <?php
         }
     } else {
+        $overallstatus = 0;
         ?>
         <script>
         console.log("NIP sudah terdaftar");

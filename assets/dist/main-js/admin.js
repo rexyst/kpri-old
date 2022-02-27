@@ -68,3 +68,25 @@ window.onclick = function(event) {
 function resetsandi(){
     window.open('../../m/kpri.model.profile-updater.php?a=10');
 }
+
+function filt(nama,x) {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById(nama);
+    filter = input.value.toUpperCase();
+    table = document.getElementById("tabel-member");
+    tr = table.getElementsByTagName("tr");
+    console.log("nama = " + filter);
+
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[x];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+
+}

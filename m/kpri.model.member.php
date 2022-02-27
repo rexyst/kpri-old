@@ -23,7 +23,6 @@ $query = $con->query($sql);
 if($query->num_rows == 0) {}
 else {
     ?>
-    <table id="tabel-member" cellpadding="5" cellspacing="0">
 	<tr>
 		<th class="table-sort" onclick="sortTable(0)">NIP</th>
 		<th class="table-sort" onclick="sortTable(1)">Nama</th>
@@ -50,7 +49,6 @@ else {
 			</td>
 		</tr>
 		<?php }} ?>
-	</table>
     <?php
 }
 ?>

@@ -1,6 +1,6 @@
 <?php
 require_once('kpri.db.php');
-$sql = "SELECT akun.`nip`, akun.`nama`,jenis_kelamin.`jenis_kelamin`,akun.`kata_sandi`,akun.`tempat_lahir`,akun.`tanggal_lahir`,akun.`alamat_rumah`,akun.`kode_pos`,akun.`nomor_hp`,akun.`instansi`,akun.`alamat_instansi`,akun.`ktp_suami`,akun.`ktp_istri`,akun.`foto_3x4`,akun.`tanggal_registrasi`,akun.`foto_profil`,status_akun.`status`,level.`level` FROM `akun` join jenis_kelamin on akun.jenis_kelamin=jenis_kelamin.`id_jenis_kelamin` join status_akun on akun.`status`=status_akun.id_status join level on level.id_level=akun.`level` where nip = ".$_GET['nip'];
+$sql = "SELECT akun.`nip`, akun.`nama`,jenis_kelamin.`jenis_kelamin`,akun.`kata_sandi`,akun.`tempat_lahir`,akun.`tanggal_lahir`,akun.`alamat_rumah`,akun.`kode_pos`,akun.`nomor_hp`,instansi.`nama_instansi`,instansi.`alamat_instansi`,akun.`ktp_suami`,akun.`ktp_istri`,akun.`foto_3x4`,akun.`tanggal_registrasi`,akun.`foto_profil`,status_akun.`status`,level.`level` FROM `akun` join jenis_kelamin on akun.jenis_kelamin=jenis_kelamin.`id_jenis_kelamin` join status_akun on akun.`status`=status_akun.id_status join level on level.id_level=akun.`level` join instansi on akun.instansi = instansi.id_instansi where nip = ".$_GET['nip'];
 $query = $con->query($sql);
 if($query->num_rows == 0) {}
 else {
@@ -19,7 +19,7 @@ else {
             <div class=kolom_alamat_rumah_1_126><span  class="alamat_rumah_1_127">Alamat Rumah</span><span  class="__1_128">: <?php echo $data['alamat_rumah']; ?></span></div>
             <div class=kolom_kode_pos_158_8><span  class="kode_pos_158_9">Kode Pos</span><span  class="__158_10">: <?php echo $data['kode_pos']; ?></span></div>
             <div class=kolom_no_hp_1_132><span  class="nomor_hp_1_133">Nomor Hp</span><span  class="__1_134">: <?php echo $data['nomor_hp']; ?></span></div>
-            <div class=kolom_instansi_158_11><span  class="__158_12">: <?php echo $data['instansi']; ?></span><span  class="instansi_158_13">Instansi</span></div>
+            <div class=kolom_instansi_158_11><span  class="__158_12">: <?php echo $data['nama_instansi']; ?></span><span  class="instansi_158_13">Instansi</span></div>
             <div class=kolom_alamat_instansi_1_129><span  class="__1_130">: <?php echo $data['alamat_instansi']; ?></span><span  class="alamat_instansi_1_131">Alamat Instansi</span></div>
             <div class=kolom_ktp_suami_1_135><span  class="foto_ktp_suami_1_136">Foto KTP Suami</span><span  class="__1_137">: <?php echo $data['ktp_suami']; ?><img id="ktp-suami-show" class="kpri-profile-show-icon" src="../../assets/i/show.png"></span></div>
             <div class=kolom_ktp_istri_1_138><span  class="foto_ktp_istri_1_139">Foto KTP Istri</span><span  class="__1_140">: <?php echo $data['ktp_istri']; ?><img id="ktp-istri-show" class="kpri-profile-show-icon" src="../../assets/i/show.png"></span></div>

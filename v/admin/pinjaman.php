@@ -13,25 +13,24 @@ include('atoms/kpri.atom.head.html');
 <?php include('atoms/kpri.atom.menu.php');?>
 
 <div class="kpri-search-bar-container">
-<form action="../../c/kpri.c.php?action=search-employee" method="post">
-<input class="kpri-search-bar" type="text" name="name" placeholder="Cari Nama">
-<input class="kpri-search-button" type="submit" value="Cari">
+<input class="kpri-search-bar" type="text" id="pinjaman" onkeyup="filt('pinjaman', 2)" placeholder="Cari Nama">
 </form>
 </div>
 
 <div class="kpri-main-container">
+<table id="tabel-member" cellpadding="5" cellspacing="0">
 <?php
-if(isset($_GET['action'])){
-    $_SESSION['name'] = $_GET['name'];
-    $_SESSION['option'] = $_GET['option'];
-    include('../../m/kpri.model.search.php');    
-} else {
-    $_GET['type'] = 'all';
+$_GET['type'] = 'all';
     include('../../m/kpri.model.peminjaman.php');
-}
-
 ?>
+</table>
 </div>
+
+<div class=tombol_tambah_data_transaksi_308_42>
+    <button class="tombol_menambah_transaksi_308_43">
+    <span  class="teks_menambah_transaksi_308_44">MENAMBAH TRANSAKSI</span>
+    </button>
+  </div>
 
 </body>
 <script src="../../assets/dist/main-js/jquery-3.3.1.min.js"></script>
