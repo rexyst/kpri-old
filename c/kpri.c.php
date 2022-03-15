@@ -298,6 +298,12 @@ if($act == 'search-member'){
     header('location:../v/admin/member.php?action=search&name='.$_POST['name'].'&option=member');
 }
 // end member-search-controller
+
+// start member-search-controller
+if($act == 'pinjaman'){
+    header('location:../v/admin/detail-pinjaman.php?id='.$_GET['id']);
+}
+// end member-search-controller
 // end view-controller
 
 ?>

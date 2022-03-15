@@ -13,8 +13,14 @@ include('atoms/kpri.atom.head.html');
 <?php include('atoms/kpri.atom.menu.php');?>
 
 <div class="kpri-search-bar-container">
-<input class="kpri-search-bar" type="text" id="member" onkeyup="filt('member', 1)" placeholder="Cari Nama">
-</form>
+<div class=kolom_cari_307_42>
+      <div class="kolom_jumlah_307_36">
+      <input class="kpri-search-bar" type="text" id="member" onkeyup="filt('member', 1)" placeholder="Cari Nama">
+      </div>
+    </div>
+    <div class=tombol_menambah_data_pengguna_307_43>
+      <div class="tombol_verifikasi_307_44"></div><span  class="teks_transaksi_belum_terverifikasi_307_45">MENAMBAH DATA PENGGUNA</span>
+    </div>
 </div>
 
 <div class="kpri-main-container">

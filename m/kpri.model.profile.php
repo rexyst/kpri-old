@@ -25,10 +25,16 @@ else {
             <div class=kolom_ktp_istri_1_138><span  class="foto_ktp_istri_1_139">Foto KTP Istri</span><span  class="__1_140">: <?php echo $data['ktp_istri']; ?><img id="ktp-istri-show" class="kpri-profile-show-icon" src="../../assets/i/show.png"></span></div>
             <div class=kolom_foto_3x4_1_141><span  class="foto_3x4_1_142">Foto 3x4</span><span  class="__1_143">: <?php echo $data['foto_3x4']; ?><img id="foto-3x4-show" class="kpri-profile-show-icon" src="../../assets/i/show.png"></span></div>
             <div class=kolom_tanggal_registrasi_158_14><span  class="tanggal_registrasi_158_15">Tanggal Registrasi</span><span  class="__158_16">: <?php echo $data['tanggal_registrasi']; ?></span></div>
-            <div class=tombol_update_profil_1_144>
+            <?php
+            if($_SESSION['level'] == "Admin"){
+                ?>
+                <div class=tombol_update_profil_1_144>
             <div class="tombol_selanjitnya_1_145"></div>
             <button class="tombol_selanjitnya_1_145" onclick="window.open('../../c/kpri.c.php?action=profile-update&nip=<?php echo $data['nip'];?>', '_SELF')"><span  class="update_profil_1_146">UPDATE PROFIL</span></button>
             </div>
+            <?php
+            }
+            ?>
             <div class=tombol_update_profil_1_1441>
             <div class="tombol_selanjitnya_1_145"></div>
             <?php
@@ -187,7 +193,7 @@ else {
             <div class="modal-content">
             <div class="modal-header">
             <span id="closezzzz" class="close">&times;</span>
-            <h2>Ubah Foto Profil</h2>
+            <h2>Ubah Foto 3x4</h2>
             </div>
             <div class="modal-body">
             <div class="input-foto">

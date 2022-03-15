@@ -57,12 +57,16 @@ if($_GET['a']==1){
     if ($_FILES["foto-ktp-suami"]["size"] > 2000000) {
         $uploadOka = 0;
         $fsize = 0;
+    } else {
+        $uploadOka = 1;
     }
     
     // Allow certain file formats
     if($imageFileTypea != "jpg") {
         $uploadOka = 0;
         $fformat = 0;
+    } else {
+        $uploadOka = 1;
     }
     
     // Check if $uploadOka is set to 0 by an error
@@ -114,12 +118,16 @@ if($_GET['a']==1){
     if ($_FILES["foto-ktp-istri"]["size"] > 2000000) {
         $uploadOka = 0;
         $fsize = 0;
+    } else {
+        $uploadOka = 1;
     }
     
     // Allow certain file formats
     if($imageFileTypea != "jpg") {
         $uploadOka = 0;
         $fformat = 0;
+    } else {
+        $uploadOka = 1;
     }
     
     // Check if $uploadOka is set to 0 by an error
@@ -171,12 +179,16 @@ if($_GET['a']==1){
     if ($_FILES["foto-3x4"]["size"] > 2000000) {
         $uploadOka = 0;
         $fsize = 0;
+    } else {
+        $uploadOka = 1;
     }
     
     // Allow certain file formats
     if($imageFileTypea != "jpg") {
         $uploadOka = 0;
         $fformat = 0;
+    } else {
+        $uploadOka = 1;
     }
     
     // Check if $uploadOka is set to 0 by an error
@@ -228,12 +240,16 @@ if($_GET['a']==1){
     if ($_FILES["foto-profile"]["size"] > 2000000) {
         $uploadOka = 0;
         $fsize = 0;
+    } else {
+        $uploadOka = 1;
     }
     
     // Allow certain file formats
     if($imageFileTypea != "jpg") {
         $uploadOka = 0;
         $fformat = 0;
+    } else {
+        $uploadOka = 1;
     }
     
     // Check if $uploadOka is set to 0 by an error

@@ -22,8 +22,8 @@ include('atoms/kpri.atom.head.html');
 </div>
 </div>
 
-</body>
 <script src="../../assets/dist/main-js/jquery-3.3.1.min.js"></script>
 <script src="../../assets/dist/main-js/kpri-main.js"></script>
 <script src="../../assets/dist/main-js/admin.js"></script>
 <script src="../../assets/dist/page-js/profile-update.js"></script>
+</body>

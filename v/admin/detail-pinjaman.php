@@ -3,22 +3,26 @@
 session_start();
 include('atoms/kpri.atom.head.html'); 
 ?>
+<link type="text/css" rel="stylesheet" href="../../assets/dist/page-css/admin/kpri-admin-special.css">
 </head>
 <body>
 
 <div class=halaman_utama_1_250>
+
 <div id="kolom_header" class="kolom_header">
 </div>
-<div class="bg_menu_1_257">
+<div class="bg_menu_1_257"></div>
 <?php include('atoms/kpri.atom.menu.php');?>
-</div>
-
 
 <div class="kpri-main-container">
-    <table id="tabel-member" cellpadding="5" cellspacing="0">
-    <?php include('../../m/kpri.model.admin-home.php'); ?>
-    </table>
+<?php 
+if(isset($_GET['id'])){
+    $_GET['id'] = $_GET['id'];
+}
+include('../../m/kpri.model.peminjaman.php');
+?>
 </div>
+
 </div>
 
 </body>
